@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Windows.Forms;
 
-namespace ChangeLog
+namespace Entidades.Arquivos
 {
    public class GerarChangeLog
    {

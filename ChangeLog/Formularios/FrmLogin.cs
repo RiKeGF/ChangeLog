@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace ChangeLog
+namespace Formularios
 {
    public partial class FrmLogin : Form
    {

@@ -64,10 +64,10 @@
     <Compile Include="Formularios\FrmRotinaChangeLog.Designer.cs">
       <DependentUpon>FrmRotinaChangeLog.cs</DependentUpon>
     </Compile>
-    <Compile Include="GerarChangeLog.cs" />
-    <Compile Include="LogDTS.cs" />
-    <Compile Include="Tipo.cs" />
-    <Compile Include="Log.cs" />
+    <Compile Include="Entidades\Arquivos\GerarChangeLog.cs" />
+    <Compile Include="Entidades\RDLC\LogDTS.cs" />
+    <Compile Include="Entidades\Enumeradores\Tipo.cs" />
+    <Compile Include="Entidades\Log.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\FrmLogin.resx">
@@ -101,8 +101,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="NewFolder1\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

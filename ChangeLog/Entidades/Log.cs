@@ -1,4 +1,6 @@
-﻿namespace ChangeLog
+﻿using Entidades.Enumeradores;
+
+namespace Entidades
 {
    public class Log
    {

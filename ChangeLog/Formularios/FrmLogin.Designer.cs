@@ -1,4 +1,4 @@
-﻿namespace ChangeLog
+﻿namespace Formularios
 {
    partial class FrmLogin
    {

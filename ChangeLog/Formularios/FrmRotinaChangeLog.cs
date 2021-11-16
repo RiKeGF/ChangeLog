@@ -1,8 +1,11 @@
-﻿using System;
+﻿using Entidades;
+using Entidades.Arquivos;
+using Entidades.Enumeradores;
+using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace ChangeLog
+namespace Formularios
 {
    public partial class FrmRotinaChangeLog : Form
    {

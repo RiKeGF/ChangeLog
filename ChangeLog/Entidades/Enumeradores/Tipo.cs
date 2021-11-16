@@ -1,4 +1,4 @@
-﻿namespace ChangeLog
+﻿namespace Entidades.Enumeradores
 {
    public enum Tipo
    {
