@@ -46,36 +46,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmLogin.cs">
+    <Compile Include="Formularios\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmLogin.Designer.cs">
+    <Compile Include="Formularios\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmEdicao.cs">
+    <Compile Include="Formularios\FrmEdicao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmEdicao.Designer.cs">
+    <Compile Include="Formularios\FrmEdicao.Designer.cs">
       <DependentUpon>FrmEdicao.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmRotinaChangeLog.cs">
+    <Compile Include="Formularios\FrmRotinaChangeLog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmRotinaChangeLog.Designer.cs">
+    <Compile Include="Formularios\FrmRotinaChangeLog.Designer.cs">
       <DependentUpon>FrmRotinaChangeLog.cs</DependentUpon>
     </Compile>
     <Compile Include="GerarChangeLog.cs" />
+    <Compile Include="LogDTS.cs" />
     <Compile Include="Tipo.cs" />
     <Compile Include="Log.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmLogin.resx">
+    <EmbeddedResource Include="Formularios\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmEdicao.resx">
+    <EmbeddedResource Include="Formularios\FrmEdicao.resx">
       <DependentUpon>FrmEdicao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmRotinaChangeLog.resx">
+    <EmbeddedResource Include="Formularios\FrmRotinaChangeLog.resx">
       <DependentUpon>FrmRotinaChangeLog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -99,6 +100,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
