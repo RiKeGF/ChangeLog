@@ -1,7 +1,7 @@
 ﻿using Entidades.Enumeradores;
 using System;
 
-namespace Entidades.RDLC
+namespace ChangeLog.Entidades.RDLC
 {
    public class LogDTS
    {

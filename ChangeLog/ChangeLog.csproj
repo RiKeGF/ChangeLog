@@ -33,8 +33,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.WinForms.12.0.2402.15\lib\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +59,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entidades\RDLC\LogDTS.cs" />
+    <Compile Include="Formularios\FrmRelLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmRelLog.Designer.cs">
+      <DependentUpon>FrmRelLog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,11 +85,13 @@
       <DependentUpon>FrmRotinaChangeLog.cs</DependentUpon>
     </Compile>
     <Compile Include="Entidades\Arquivos\GerarChangeLog.cs" />
-    <Compile Include="Entidades\RDLC\LogDTS.cs" />
     <Compile Include="Entidades\Enumeradores\Tipo.cs" />
     <Compile Include="Entidades\Log.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\FrmRelLog.resx">
+      <DependentUpon>FrmRelLog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -88,10 +110,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Relatorios\Log.rdlc" />
+    <EmbeddedResource Include="Relatorios\RelLog.rdlc" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\ChangeLog.Entidades.RDLC.LogDTS.datasource" />
     <None Include="Properties\DataSources\ChangeLog.Properties.Resources.datasource" />
     <None Include="Properties\DataSources\ChangeLog.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\Entidades.Arquivos.GerarChangeLog.datasource" />
+    <None Include="Properties\DataSources\Entidades.Log.datasource" />
     <None Include="Properties\DataSources\Entidades.RDLC.LogDTS.datasource" />
+    <None Include="Properties\DataSources\Formularios.FrmEdicao.datasource" />
+    <None Include="Properties\DataSources\Formularios.FrmLogin.datasource" />
+    <None Include="Properties\DataSources\Formularios.FrmRotinaChangeLog.datasource" />
     <None Include="Properties\DataSources\Program.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
