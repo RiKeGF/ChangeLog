@@ -56,7 +56,7 @@
          this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
          this.panel1.Location = new System.Drawing.Point(0, 0);
          this.panel1.Name = "panel1";
-         this.panel1.Size = new System.Drawing.Size(860, 51);
+         this.panel1.Size = new System.Drawing.Size(721, 51);
          this.panel1.TabIndex = 1;
          // 
          // RVLog
@@ -68,7 +68,7 @@
          this.RVLog.LocalReport.ReportEmbeddedResource = "ChangeLog.Relatorios.RelLog.rdlc";
          this.RVLog.Location = new System.Drawing.Point(0, 51);
          this.RVLog.Name = "RVLog";
-         this.RVLog.Size = new System.Drawing.Size(860, 489);
+         this.RVLog.Size = new System.Drawing.Size(721, 669);
          this.RVLog.TabIndex = 2;
          // 
          // LogDTSBindingSource
@@ -80,7 +80,7 @@
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-         this.ClientSize = new System.Drawing.Size(860, 540);
+         this.ClientSize = new System.Drawing.Size(721, 720);
          this.Controls.Add(this.RVLog);
          this.Controls.Add(this.panel1);
          this.ForeColor = System.Drawing.SystemColors.Control;
