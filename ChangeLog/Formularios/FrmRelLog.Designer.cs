@@ -28,11 +28,19 @@
       /// </summary>
       private void InitializeComponent()
       {
+         this.components = new System.ComponentModel.Container();
+         Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+         this.LogDTSBindingSource = new System.Windows.Forms.BindingSource(this.components);
          this.label1 = new System.Windows.Forms.Label();
          this.panel1 = new System.Windows.Forms.Panel();
          this.RVLog = new Microsoft.Reporting.WinForms.ReportViewer();
+         ((System.ComponentModel.ISupportInitialize)(this.LogDTSBindingSource)).BeginInit();
          this.panel1.SuspendLayout();
          this.SuspendLayout();
+         // 
+         // LogDTSBindingSource
+         // 
+         this.LogDTSBindingSource.DataSource = typeof(ChangeLog.Entidades.RDLC.LogDTS);
          // 
          // label1
          // 
@@ -57,10 +65,15 @@
          // 
          // RVLog
          // 
-         this.RVLog.Location = new System.Drawing.Point(0, 0);
-         this.RVLog.Name = "ReportViewer";
-         this.RVLog.Size = new System.Drawing.Size(396, 246);
-         this.RVLog.TabIndex = 0;
+         this.RVLog.Dock = System.Windows.Forms.DockStyle.Fill;
+         reportDataSource1.Name = "DataSetLog";
+         reportDataSource1.Value = this.LogDTSBindingSource;
+         this.RVLog.LocalReport.DataSources.Add(reportDataSource1);
+         this.RVLog.LocalReport.ReportEmbeddedResource = "ChangeLog.Relatorios.RelLog.rdlc";
+         this.RVLog.Location = new System.Drawing.Point(0, 51);
+         this.RVLog.Name = "RVLog";
+         this.RVLog.Size = new System.Drawing.Size(1001, 489);
+         this.RVLog.TabIndex = 2;
          // 
          // FrmRelLog
          // 
@@ -68,11 +81,14 @@
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
          this.ClientSize = new System.Drawing.Size(1001, 540);
+         this.Controls.Add(this.RVLog);
          this.Controls.Add(this.panel1);
          this.ForeColor = System.Drawing.SystemColors.Control;
          this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
          this.Name = "FrmRelLog";
          this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+         this.Load += new System.EventHandler(this.FrmRelLog_Load);
+         ((System.ComponentModel.ISupportInitialize)(this.LogDTSBindingSource)).EndInit();
          this.panel1.ResumeLayout(false);
          this.panel1.PerformLayout();
          this.ResumeLayout(false);
@@ -83,6 +99,7 @@
       private System.Windows.Forms.Label label1;
       private System.Windows.Forms.Panel panel1;
       private Microsoft.Reporting.WinForms.ReportViewer RVLog;
+      private System.Windows.Forms.BindingSource LogDTSBindingSource;
    }
 }
 

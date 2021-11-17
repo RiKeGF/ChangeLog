@@ -57,7 +57,9 @@ namespace Formularios
 
       private void Gerar()
       {
-         new GerarChangeLog(this.ListaRegistros, this.LoginUsuario);
+         FrmRelLog frm = new FrmRelLog(this.ListaRegistros, this.LoginUsuario);
+         frm.Show();
+         //new GerarChangeLog(this.ListaRegistros, this.LoginUsuario);
       }
 
       private void Cancelar()
