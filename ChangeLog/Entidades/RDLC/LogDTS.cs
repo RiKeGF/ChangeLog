@@ -16,8 +16,6 @@ namespace ChangeLog.Entidades.RDLC
 
       public string DataFormatada { get { return DataHora.ToString("dd-MM-yyyy_HH-mm"); } set { } }
 
-      public int bilu { get; set; }
-
       public DateTime DataHora { get; set; }
    }
 }

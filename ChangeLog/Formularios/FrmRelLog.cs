@@ -2,6 +2,7 @@
 using Entidades;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace Formularios
@@ -22,7 +23,7 @@ namespace Formularios
       {
          List<LogDTS> list = new List<LogDTS>();
 
-         foreach (Log log in this.ListLog)
+         foreach (Log log in this.ListLog.OrderBy(x=>x.Tipo))
          {
             LogDTS obj = new LogDTS();
 
