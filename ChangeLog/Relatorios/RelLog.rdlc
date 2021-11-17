@@ -6,13 +6,13 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>4cm</Width>
+              <Width>2.96812cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>10cm</Width>
+              <Width>10.52917cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4cm</Width>
+              <Width>5.01833cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -31,7 +31,7 @@
                               <Value>=Fields!Tipo.Value</Value>
                               <Style>
                                 <FontFamily>Calibri</FontFamily>
-                                <FontSize>12pt</FontSize>
+                                <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -86,7 +86,7 @@
                               <Value>=Fields!Titulo.Value</Value>
                               <Style>
                                 <FontFamily>Calibri</FontFamily>
-                                <FontSize>12pt</FontSize>
+                                <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -141,7 +141,7 @@
                               <Value>=Fields!Sprint.Value</Value>
                               <Style>
                                 <FontFamily>Calibri</FontFamily>
-                                <FontSize>12pt</FontSize>
+                                <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -242,6 +242,7 @@
                       </Style>
                     </Textbox>
                     <ColSpan>3</ColSpan>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell />
@@ -286,7 +287,7 @@
         <Top>1.62722cm</Top>
         <Left>0.37042cm</Left>
         <Height>1.97327cm</Height>
-        <Width>18cm</Width>
+        <Width>18.51562cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -535,10 +536,10 @@
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
-    <LeftMargin>2cm</LeftMargin>
-    <RightMargin>2cm</RightMargin>
-    <TopMargin>2cm</TopMargin>
-    <BottomMargin>2cm</BottomMargin>
+    <LeftMargin>1cm</LeftMargin>
+    <RightMargin>0cm</RightMargin>
+    <TopMargin>0cm</TopMargin>
+    <BottomMargin>0cm</BottomMargin>
     <ColumnSpacing>0.13cm</ColumnSpacing>
     <Style />
   </Page>
