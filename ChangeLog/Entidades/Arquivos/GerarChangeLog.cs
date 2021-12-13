@@ -21,7 +21,9 @@ namespace Entidades.Arquivos
 
       private StreamWriter CriarArquivo()
       {
-         string path = string.Concat(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), string.Concat("\\ChangeLogs\\ChangeLog_", DateTime.Now.ToString("dd-MM-yyyy_HH-mm"), ".txt"));
+         string name = string.Concat("ChangeLog_", DateTime.Now.ToString("dd - MM - yyyy_HH - mm"));
+         Clipboard.SetText(name);
+         string path = string.Concat(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), string.Concat("\\ChangeLogs\\", name, ".txt"));
 
          info = new FileInfo(path);
 
