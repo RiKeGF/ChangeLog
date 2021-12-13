@@ -18,6 +18,7 @@ namespace Formularios
          InitializeComponent();
          this.LoginUsuario = login;
          CmbTipo.DataSource = Enum.GetValues(typeof(Tipo));
+         CmbTipoRelatorio.DataSource = Enum.GetValues(typeof(TipoRelatorio));
          Bind();
       }
 
@@ -57,9 +58,13 @@ namespace Formularios
 
       private void Gerar()
       {
-         FrmRelLog frm = new FrmRelLog(this.ListaRegistros, this.LoginUsuario);
-         frm.Show();
-         //new GerarChangeLog(this.ListaRegistros, this.LoginUsuario);
+         if (CmbTipoRelatorio.SelectedItem.Equals(TipoRelatorio.PDF))
+         {
+            FrmRelLog frm = new FrmRelLog(this.ListaRegistros, this.LoginUsuario);
+            frm.Show();
+         }
+         else
+            new GerarChangeLog(this.ListaRegistros, this.LoginUsuario);
       }
 
       private void Cancelar()

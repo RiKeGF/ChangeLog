@@ -69,6 +69,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entidades\Enumeradores\TipoRelatorio.cs" />
     <Compile Include="Entidades\RDLC\LogDTS.cs" />
     <Compile Include="Formularios\FrmRelLog.cs">
       <SubType>Form</SubType>

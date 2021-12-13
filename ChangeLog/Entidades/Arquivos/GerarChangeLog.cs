@@ -15,16 +15,26 @@ namespace Entidades.Arquivos
       {
          this.LoginUsuario = nomeUsuario;
          this.Arquivo = CriarArquivo();
-         PreencherArquivo(lista);
-         MessageBox.Show("ChangeLog Gerado com Sucesso!");
+
+         if (this.Arquivo != null)
+         {
+            PreencherArquivo(lista);
+            MessageBox.Show("ChangeLog Gerado com Sucesso!");
+         }
       }
 
       private StreamWriter CriarArquivo()
       {
-         string name = string.Concat("ChangeLog_", DateTime.Now.ToString("dd - MM - yyyy_HH - mm"));
+         string name = string.Concat("ChangeLog_", DateTime.Now.ToString("dd-MM-yyyy_HH-mm"));
+         string path = string.Concat(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), string.Concat(name, ".txt"));
          Clipboard.SetText(name);
-         string path = string.Concat(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), string.Concat("\\ChangeLogs\\", name, ".txt"));
 
+         SaveFileDialog sf = new SaveFileDialog();
+         sf.FileName = name;
+         if (sf.ShowDialog().Equals(DialogResult.OK))
+            path = Path.Combine(Path.GetDirectoryName(sf.FileName), string.Concat(name, ".txt"));
+         else
+            return null;
          info = new FileInfo(path);
 
          if (info.Exists)

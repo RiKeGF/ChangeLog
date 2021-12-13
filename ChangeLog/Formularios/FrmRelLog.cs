@@ -36,7 +36,7 @@ namespace Formularios
 
             list.Add(obj);
          }
-
+         Clipboard.SetText(string.Concat("ChangeLog_", DateTime.Now.ToString("dd-MM-yyyy_HH-mm")));
          LogDTSBindingSource.DataSource = list;
          this.RVLog.RefreshReport();
       }

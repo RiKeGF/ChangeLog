@@ -44,6 +44,7 @@
          this.CmbTipo = new System.Windows.Forms.ComboBox();
          this.groupBox4 = new System.Windows.Forms.GroupBox();
          this.TxtSprint = new System.Windows.Forms.TextBox();
+         this.CmbTipoRelatorio = new System.Windows.Forms.ComboBox();
          this.panel1.SuspendLayout();
          this.groupBox2.SuspendLayout();
          this.groupBox3.SuspendLayout();
@@ -120,6 +121,7 @@
          // 
          // panel2
          // 
+         this.panel2.Controls.Add(this.CmbTipoRelatorio);
          this.panel2.Controls.Add(this.BtnAdicionar);
          this.panel2.Controls.Add(this.BtnEditar);
          this.panel2.Controls.Add(this.BtnGerar);
@@ -242,6 +244,17 @@
          this.TxtSprint.Size = new System.Drawing.Size(236, 25);
          this.TxtSprint.TabIndex = 0;
          // 
+         // CmbTipoRelatorio
+         // 
+         this.CmbTipoRelatorio.BackColor = System.Drawing.SystemColors.Control;
+         this.CmbTipoRelatorio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+         this.CmbTipoRelatorio.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+         this.CmbTipoRelatorio.FormattingEnabled = true;
+         this.CmbTipoRelatorio.Location = new System.Drawing.Point(12, 12);
+         this.CmbTipoRelatorio.Name = "CmbTipoRelatorio";
+         this.CmbTipoRelatorio.Size = new System.Drawing.Size(98, 21);
+         this.CmbTipoRelatorio.TabIndex = 5;
+         // 
          // FrmRotinaChangeLog
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -291,6 +304,7 @@
       private System.Windows.Forms.ComboBox CmbTipo;
       private System.Windows.Forms.GroupBox groupBox4;
       private System.Windows.Forms.TextBox TxtSprint;
+      private System.Windows.Forms.ComboBox CmbTipoRelatorio;
    }
 }
 
